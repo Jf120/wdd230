@@ -60,11 +60,6 @@ html {
     border-bottom: 1px solid #000000;
 }
 
-.disclaimer p {
-    padding: 0 0 8px 0;
-    border-top: 1px solid #000000;
-}
-
 footer {
     display: grid;
     justify-items: center;
