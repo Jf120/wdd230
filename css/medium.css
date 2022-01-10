@@ -1,0 +1,14 @@
+@media (min-width: 32.5em) {
+    html {
+        font-size: 18px;
+    }
+
+    main {
+        margin: 50px 0;
+    }
+
+    .profile, footer {
+        background-color: #682121;
+        border: 1px solid #682121;
+    }
+}
