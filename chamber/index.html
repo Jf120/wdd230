@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/small.css">
+</head>
+<body>
+    <header>
+        <section class="logo">
+            <a href="index.html"><img src="./images/logo_text.png" alt="Peach Town Chamber of Commerce Logo"></a>
+        </section>
+        <nav class="navbar" id="nav">
+            <div><a href="#">Discover</a></div>
+            <div><a href="#">Directory</a></div>
+            <div><a href="#">Join</a></div>
+            <div><a href="#">Contact</a></div>
+        </nav>
+        <div class="icon" onclick="show()">
+            <img id="icon" src="./images/menu.png" alt="Menu Icon">
+        </div>
+
+        <section class="social">
+            <a id="fb" href="https://www.facebook.com" target="_blank"><img src="./images/facebook.png" alt="Facebook"></a>
+            <a id="li" href="https://www.linkedin.com" target="_blank"><img src="./images/linkedin.png" alt="LinkedIn"></a>
+        </section>
+        <section class="date">
+            <p id="date">Tuesday, March 15, 2017</p>
+        </section>
+    </header>
+    <main>
+        <section class="info">
+            <div class="event">
+                <p>Event</p>
+            </div>
+            <div class="weather">
+                <p>Weather</p>
+            </div>
+            <div class="hero">
+                <p>Hero with site name and call to action</p>
+            </div>
+            <div class="join">
+                <p>Join</p>
+            </div>
+            <div class="news">
+                <p>News Release</p>
+            </div>
+        </section>
+        <section class="spotlight">
+            <div class="up">
+                <p>Spotlight 1</p>
+            </div>
+            <div class="middle">
+                <p>Spotlight 2</p>
+            </div>
+            <div class="down">
+                <p>Spotlight 3</p>
+            </div>
+        </section>  
+    </main>
+    <footer>
+        <section class="logo-info">
+            <img src="./images/logo_text_location.png" alt="Peach Town Chamber of Commerce Logo">
+        </section>
+        <section class="contact-info">
+            <p>+502 5135-4684</p>
+            <p>info@peachtowncommerce.com</p>
+            <a href="https://www.google.com/maps/place/Peachtown+Drv,+Villa+Canales/@14.4801734,-90.5034419,17z/data=!3m1!4b1!4m5!3m4!1s0x8589a58ec1a2a3dd:0x5697b947a374750b!8m2!3d14.4800312!4d-90.5013311" target="_blank">Location Map</a>
+        </section>
+        <section class="footer">
+            <span>&copy;<span id="year"></span>
+                <span> Peach Town Chamber |</span>
+                <span style="font-weight: bold;"> Jorge Flores </span>
+                <span>| WDD 230 Project |</span>
+                <span>Last Modification: <span id="lastModified"></span>
+        </section>
+    </footer>
+    <script type="text/javascript" src="./js/main.js"></script>
+</body>
+</html>
