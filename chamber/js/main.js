@@ -127,6 +127,7 @@ document.querySelector(".banner__close").addEventListener("click", function () {
     this.closest(".banner").style.display = "none";
 });
 
+// Changes hero based on screen size - Large
 let sizeBg = window.matchMedia("(max-width: 1082px)");
 function changeBg(sizeBg) {
     if (sizeBg.matches) {
@@ -139,6 +140,7 @@ function changeBg(sizeBg) {
 }
 sizeBg.addEventListener("change", changeBg);
 
+// Changes hero based on screen size - Small
 let sizeBgSmall = window.matchMedia("(max-width: 490px)");
 function changeBgSmall(sizeBgSmall) {
     if (sizeBgSmall.matches) {
