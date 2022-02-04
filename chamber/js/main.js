@@ -103,16 +103,26 @@ size.addEventListener("change", showNav);
 // Change image depending on media screen size
 
 let sizeImg = window.matchMedia("(max-width: 490px)");
-function changeImage(sizeImg) {
-    if (sizeImg.matches) {
+function changeImage() {
+    if (screen.width < 490) {
         document.getElementById("icon").src = "./images/icon-small.png";
     }
-
+    
     else {
         document.getElementById("icon").src = "./images/menu.png";
-    }
+    }   
 }
 sizeImg.addEventListener("change", changeImage);
+
+if (screen.width < 490) {
+    document.getElementById("icon").src = "./images/icon-small.png";
+}
+
+else {
+    document.getElementById("icon").src = "./images/menu.png";
+}
+
+
 
 // Shows banner on certain days of the week
 if (day === "Monday" || day === "Tuesday") {
@@ -129,7 +139,7 @@ document.querySelector(".banner__close").addEventListener("click", function () {
 
 // Changes hero based on screen size - Large
 let sizeBg = window.matchMedia("(max-width: 1082px)");
-function changeBg(sizeBg) {
+function changeBgLarge(sizeBg) {
     if (sizeBg.matches) {
         document.querySelector(".hero").style.backgroundImage = "url(./images/hero-medium.jpg)";
     }
@@ -138,9 +148,18 @@ function changeBg(sizeBg) {
         document.querySelector(".hero").style.backgroundImage = "url(./images/hero-big.webp)";
     }
 }
-sizeBg.addEventListener("change", changeBg);
+sizeBg.addEventListener("change", changeBgLarge);
 
 // Changes hero based on screen size - Small
+
+if (screen.width < 1082) {
+    document.querySelector(".hero").style.backgroundImage = "url(./images/hero.jpg)";
+}
+
+else {
+    document.querySelector(".hero").style.backgroundImage = "url(./images/hero-medium.jpg)";
+}
+
 let sizeBgSmall = window.matchMedia("(max-width: 490px)");
 function changeBgSmall(sizeBgSmall) {
     if (sizeBgSmall.matches) {
