@@ -110,13 +110,26 @@
     main {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr auto;
         margin: 15px auto
     }
 
-    middle {
-        grid-column: 2;
+    .up {
+        grid-column: 1;
         grid-row: 1;
+    }
+
+    .up, .middle {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .middle {
+        grid-column: 1;
+        grid-row: 2;
     }
     
     .down {
@@ -126,13 +139,14 @@
     .info {
         grid-row: 1;
         grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
     }
 
     .spotlight {
         grid-row: 2;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr; 
+        grid-template-rows: auto auto;
     }
 
     .spotlight div {
@@ -142,6 +156,14 @@
     .hero {
         grid-column: 1;
         grid-row: 1;
+    }
+
+    .hero h1 {
+        margin: 0;
+    }
+
+    .hero button {
+        margin: 40px 10px 20px 10px;
     }
 
     .event {

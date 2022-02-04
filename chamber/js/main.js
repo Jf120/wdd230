@@ -113,3 +113,40 @@ function changeImage(sizeImg) {
     }
 }
 sizeImg.addEventListener("change", changeImage);
+
+// Shows banner on certain days of the week
+if (day === "Monday" || day === "Tuesday") {
+    document.querySelector(".banner").style.visibility = "visible";
+}
+
+else {
+    document.querySelector(".banner").style.display = "none";
+}
+
+document.querySelector(".banner__close").addEventListener("click", function () {
+    this.closest(".banner").style.display = "none";
+});
+
+let sizeBg = window.matchMedia("(max-width: 1082px)");
+function changeBg(sizeBg) {
+    if (sizeBg.matches) {
+        document.querySelector(".hero").style.backgroundImage = "url(./images/hero-medium.jpg)";
+    }
+
+    else {
+        document.querySelector(".hero").style.backgroundImage = "url(./images/hero-big.webp)";
+    }
+}
+sizeBg.addEventListener("change", changeBg);
+
+let sizeBgSmall = window.matchMedia("(max-width: 490px)");
+function changeBgSmall(sizeBgSmall) {
+    if (sizeBgSmall.matches) {
+        document.querySelector(".hero").style.backgroundImage = "url(./images/hero.jpg)";
+    }
+
+    else {
+        document.querySelector(".hero").style.backgroundImage = "url(./images/hero-medium.jpg)";
+    }
+}
+sizeBgSmall.addEventListener("change", changeBgSmall);
