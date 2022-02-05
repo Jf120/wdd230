@@ -102,6 +102,15 @@ size.addEventListener("change", showNav);
 
 // Change image depending on media screen size
 
+if (screen.width < 490) {
+    document.getElementById("icon").src = "./images/icon-small.png";
+}
+
+else {
+    document.getElementById("icon").src = "./images/menu.png";
+}
+
+
 let sizeImg = window.matchMedia("(max-width: 490px)");
 function changeImage() {
     if (screen.width < 490) {
@@ -113,16 +122,6 @@ function changeImage() {
     }   
 }
 sizeImg.addEventListener("change", changeImage);
-
-if (screen.width < 490) {
-    document.getElementById("icon").src = "./images/icon-small.png";
-}
-
-else {
-    document.getElementById("icon").src = "./images/menu.png";
-}
-
-
 
 // Shows banner on certain days of the week
 if (day === "Monday" || day === "Tuesday") {
