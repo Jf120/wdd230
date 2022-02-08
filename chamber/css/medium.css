@@ -35,10 +35,6 @@
         color: white;
         font-size: 2em; 
     }
-    
-    div:hover {
-        background-color: #708080;
-    }
 
     div a:hover {
         color: yellow;

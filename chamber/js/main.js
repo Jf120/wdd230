@@ -177,6 +177,8 @@ sizeBgSmall.addEventListener("change", changeBgSmall);
 import * as weather from './windchill.js';
 
 let temperature = 43;
+document.querySelector("#temperature").textContent = `${temperature} °C`;
 let wind_speed = 4;
+document.querySelector("#windspeed").innerHTML  = `${wind_speed} km/h`;
 
 weather.windchill(temperature, wind_speed);
