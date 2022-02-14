@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity: Progressive Loading of Images</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" type="image/jpg" href="favicon.ico"/>
+</head>
+<body>
+    <header>
+        <h1>Progressive Loading of Images</h1>
+    </header>
+    <main>
+        <section class="photos">
+            <picture>
+                <img src="http://placehold.it/300x400" data-src='images/first.jpg' alt='NAME'>
+            </picture>
+            <picture>
+                <img src="http://placehold.it/300x400" data-src='images/second.jpg' alt='NAME'>
+            </picture>
+            <picture>
+                <img src="http://placehold.it/300x400" data-src='images/third.jpg' alt='NAME'>
+            </picture>
+            <picture>
+                <img src="http://placehold.it/300x400" data-src='images/fourth.jpg' alt='NAME'>
+            </picture>
+            <picture>
+                <img src="http://placehold.it/300x400" data-src='images/fifth.jpg' alt='NAME'>
+            </picture>
+        </section>  
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> .:|:. Jorge Flores .:|:. Guatemala</p>
+        <p>Last updated: <span id="lastModified"></span></p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
