@@ -99,6 +99,35 @@ h2 {
     margin: 0;
 }
 
+section.gallery-container {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+}
+
+section.gallery-container:hover {
+    border: 1px solid #777;
+}
+
+section.gallery-container img {
+    width: 100%;
+    height: auto;
+}
+
+div.description {
+    padding: 15px;
+    text-align: center;
+}
+
+section img[data-src] {
+    filter: blur(0.2em);
+}
+
+section img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
+
 @media (min-width: 1082px){
     body {
         font-family: 'Dongle', sans-serif;
@@ -186,6 +215,14 @@ h2 {
         max-width: 1300px;
         margin: 10px auto;
     }
+
+    /* .discover {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(3, auto);
+        max-width: 1300px;
+        margin: 10px auto;
+    } */
     
     .spotlight {
         grid-column: 3;
