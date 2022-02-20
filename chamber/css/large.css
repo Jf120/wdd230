@@ -24,6 +24,11 @@ main {
     text-align: center;
     color: white;
     background: #026d6d;
+    font-size: 1.5em;
+}
+
+.visits-container p {
+    margin: 0 auto;
 }
 
 .banner__content {
