@@ -15,6 +15,17 @@ main {
     margin: 0 auto 15px auto;
 }
 
+.visits-container {
+    grid-column: 1 / 4;
+    grid-row: 4;
+    border: 1px solid black;
+    width: 98%;
+    margin: 0 auto 15px auto;
+    text-align: center;
+    color: white;
+    background: #026d6d;
+}
+
 .banner__content {
     padding: 16px;
     max-width: 500px;
