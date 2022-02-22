@@ -10,6 +10,62 @@
         font-family: 'Source Sans Pro', sans-serif;
     }
     
+    .thankyou {
+        grid-column: 1 / 3;
+        grid-row: 1/3;
+        margin: 50px 0;
+    }
+
+    .ty {
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .membership-info {
+        margin-top: 170px;
+        padding: 0 20px;
+    }
+
+    form {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .membership-info ul {
+        list-style-type: none;
+    }
+
+    .join-form {
+        grid-template-columns: auto auto;
+    }
+
+    .radio {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .name {
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        margin: 0;
+    }
+
+    .name label input {
+        max-width: 240px;
+    }
+
+    .name label {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: right;
+        grid-gap: 15px;
+        margin-left: 10px;
+    }
+
+    #first-name {
+        margin-bottom: 15px;
+    }
+
     header {
         background-color: #168f8f;
         display: grid;
@@ -285,4 +341,38 @@
         grid-template-columns: 1fr 1fr;
         margin-right: auto;
     }
+}
+
+@media (max-width: 580px) {
+    .join-form {
+        grid-template-columns: 1fr;
+    }
+
+    .name label input {
+        margin-left: 0;
+        max-width: 220px;
+    }
+
+    form input {
+        margin-left: 0;
+        max-width: 220px;
+    }
+
+    .name label {
+        margin-left: 0;
+    }
+
+    textarea {
+        margin-left: 0;
+        max-width: 210px;
+    }
+    .membership-info {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .membership-info ul {
+        padding: 0;
+    }
+
 }

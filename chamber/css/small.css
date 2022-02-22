@@ -21,6 +21,10 @@
         align-items: center;   
     }
     
+    .join-form {
+        grid-template-columns: auto;
+    }
+    
     .logo  {
         grid-column: 1;
         grid-row: 1;
@@ -229,5 +233,26 @@
         padding: 10px;
         font-size: 1.2em;
         line-height: 0.8em;
+    }
+
+    .name label input {
+        margin-left: 0;
+        width: 150px;
+    }
+
+    form input {
+        margin-left: 0;
+        max-width: 150px;
+    }
+
+    textarea {
+        margin-left: 0;
+        max-width: 135px;
+    }
+
+    .thankyou {
+        grid-column: 1;
+        grid-row: 1 / 3;
+        margin: 100px 0;
     }
 }

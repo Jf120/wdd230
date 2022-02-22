@@ -144,7 +144,98 @@ section img {
     transition: filter 0.5s;
 }
 
+
+
+input, textarea {
+    border-radius: 3px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    margin: 90px auto;
+}
+
+form input {
+    max-width: 240px;
+    margin-left: 10px;
+}
+
+textarea {
+    max-width: 228px;
+    margin-left: 10px;
+    padding: 5px 10px;
+}
+
+.radio {
+    margin-left: 10px;
+}
+
+.radio label input {
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+.name {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.name label input {
+    max-width: 170px;
+    margin-left: 5px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.membership-info div {
+    text-align: center; 
+}
+
+.membership-info ul {
+    margin: 0;
+}
+
+.membership-info p {
+    margin: 0;
+}
+
+.left {
+    text-align: right;
+}
+
+.submit {
+    grid-column: 1 / 3;
+    margin: 0 auto;
+}
+
+.thankyou {
+    text-align: center;
+}
+
 @media (min-width: 1082px){
+    .form {
+        grid-column: 1 / 3;
+        grid-row: 1 / 4;
+    }
+
+    .thankyou {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .membership-info {
+        grid-column: 3;
+        grid-row: 1 / 4;
+        padding: 15px 30px 15px 0;
+        margin-left: -30px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
     body {
         font-family: 'Dongle', sans-serif;
     }
@@ -231,14 +322,6 @@ section img {
         max-width: 1300px;
         margin: 10px auto;
     }
-
-    /* .discover {
-        display: grid;
-        grid-template-columns: repeat(3, auto);
-        grid-template-rows: repeat(3, auto);
-        max-width: 1300px;
-        margin: 10px auto;
-    } */
     
     .spotlight {
         grid-column: 3;

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <section class="logo">
+            <a href="index.html"><img src="./images/logo_text.webp" alt="Peach Town Chamber of Commerce Logo"></a>
+        </section>
+        <nav class="navbar" id="nav">
+            <div><a href="discover.html">Discover</a></div>
+            <div><a href="#">Directory</a></div>
+            <div><a href="join.html">Join</a></div>
+            <div><a href="#">Contact</a></div>
+        </nav>
+        <div class="icon">
+            <img id="icon" src="./images/menu.png" alt="Menu Icon">
+        </div>
+
+        <section class="social">
+            <a id="fb" href="https://www.facebook.com" target="_blank"><img src="./images/facebook.png" alt="Facebook"></a>
+            <a id="li" href="https://www.linkedin.com" target="_blank"><img src="./images/linkedin.png" alt="LinkedIn"></a>
+        </section>
+        <section class="date">
+            <p id="date">Tuesday, March 15, 2017</p>
+        </section>
+        <div class="banner">
+            <div class="banner__content">
+                <div class="banner__text">
+                    <strong>Reminder:</strong> 🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+                </div>
+                <button class="banner__close" type="button">
+                <span class="material-icons">
+                    close
+                </span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="join-form">
+        <section class="form">
+            <form action="thankyou.html">
+                <div class="name">
+                    <label for="firstName" id="first-name">
+                        First Name
+                        <input type="text" name="firstname" placeholder="First Name" required>
+                    </label>
+                    
+                    <label for="lastname">
+                        Last Name
+                        <input type="text" name="lastname" placeholder="Last Name" required>
+                    </label>
+                </div>
+                
+
+                <label for="businessposition" class="left">
+                    Business Position
+                </label>
+                <input type="text" name="businessposition" pattern="[A-Za-z\s-]{7,}" placeholder="Business Position" required>
+
+                <label for="email" class="left">
+                    Email
+                </label>
+                <input type="text" name="email" placeholder="user@email.com" required>
+                
+                <label for="phone" class="left">
+                    Phone Number
+                </label>
+                <input type="tel" name="phone" placeholder="(555) 555-5555" required>
+
+                <label for="businessname" class="left">
+                    Business Name
+                </label>
+                <input type="text" name="businessname" placeholder="Business Name / Title" required>
+
+                <label for="membershiptype" class="left">
+                    Membership Type
+                </label>
+                <div class="radio">
+                    <label for="NP-Membership">NP
+                        <input type="radio" id="membership1"
+                        name="NP-Membership" value="np">
+                    </label>
+                    
+                    <label for="Bronze-Membership">Bronze
+                        <input type="radio" id="membership2"
+                        name="Bronze-Membership" value="bronze">
+                    </label>
+                    
+                    <label for="Silver-Membership">Silver
+                        <input type="radio" id="membership3"
+                        name="Silver-Membership" value="silver">
+                    </label>
+
+                    <label for="Gold-Membership">Gold
+                        <input type="radio" id="membership4"
+                        name="Gold-Membership" value="gold">
+                    </label>
+                </div>
+                
+                <label for="businessdescription" class="left">
+                    Business Description
+                </label>
+                <textarea id="description" name="businessdescription" rows="4" cols="50" placeholder="Business Description"></textarea>
+
+                <input type="hidden" id="loaded" name="loadedbyuser">
+                <input type="submit" value="Submit" class="submit">
+            </form>
+        </section>
+
+        <section class="membership-info">
+            <div>
+                <img src="./images/membership.png" alt="Membership">
+            </div>
+                
+            <ul>
+                <li>
+                    NP Membership is for non profit organizations and there is no fee.
+                </li>
+                <li>
+                    Bronze Membership
+                </li>
+                <li>
+                    Silver Membership
+                </li>
+                <li>
+                    Gold Membership
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <section class="logo-info">
+            <img src="./images/logo_text_location.webp" alt="Peach Town Chamber of Commerce Logo">
+        </section>
+        <section class="contact-info">
+            <p>+502 5135-4684</p>
+            <p>info@peachtowncommerce.com</p>
+            <a href="https://www.google.com/maps/place/Peachtown+Drv,+Villa+Canales/@14.4801734,-90.5034419,17z/data=!3m1!4b1!4m5!3m4!1s0x8589a58ec1a2a3dd:0x5697b947a374750b!8m2!3d14.4800312!4d-90.5013311" target="_blank">Location Map</a>
+        </section>
+        <section class="footer">
+            <span>&copy;<span id="year"></span>
+                <span> Peach Town Chamber |</span>
+                <span style="font-weight: bold;"> Jorge Flores </span>
+                <span>| WDD 230 Project |</span>
+                <span>Last Modification: <span id="lastModified"></span>
+        </section>
+    </footer>
+    <script type="module" src="./js/join.js"></script>
+</body>
+</html>
