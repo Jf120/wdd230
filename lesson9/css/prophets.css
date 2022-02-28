@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif&display=swap');
+
+body {
+    font-family: 'Roboto Serif', serif;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}   
+
+header {
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 10px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+div.cards {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 10px;
+    text-align: center;
+}
+
+section {
+    border: 1px solid black;
+}
