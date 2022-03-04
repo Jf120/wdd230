@@ -5,6 +5,43 @@ main {
     font-size: 1.5em;
 }
 
+.directory {
+    grid-template-rows: auto 1fr 1fr 1fr;
+    margin: 30px auto;
+}
+
+section.cards {
+    grid-column: 1 / 4;
+    grid-row: 2 / 5;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    margin: 20px 10px;
+    text-align: center;
+}
+
+.info-holder h3 {
+    margin: 0;
+}
+
+.cards div {
+    border: 1px solid #d4d4d4;
+    box-shadow: 5px 5px black;
+}
+
+.info-holder a:hover {
+    color:black;
+}
+
+.cards p {
+    margin: 0;
+}
+
+.cards img {
+    max-width: 150px;
+    margin: 10px auto;
+}
+
 .banner {
     background: #026d6d;
     grid-column: 1 / 4;
@@ -144,8 +181,6 @@ section img {
     transition: filter 0.5s;
 }
 
-
-
 input, textarea {
     border-radius: 3px;
 }
@@ -216,10 +251,19 @@ textarea {
     text-align: center;
 }
 
+.buttons {
+    margin: 10px auto 0 auto;
+}
+
 @media (min-width: 1082px){
     .form {
         grid-column: 1 / 3;
         grid-row: 1 / 4;
+    }
+
+    .buttons {
+        grid-column: 2;
+        grid-row: 1;
     }
 
     .thankyou {

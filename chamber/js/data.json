@@ -1,0 +1,74 @@
+{
+    "members" : [
+        {
+            "name" : "Rapid Pizza",
+            "type" : "Food",
+            "description" : "Business1",
+            "address" : "1401 Lee St Leakesville, Mississippi(MS), 39451",
+            "phone" : "(502) 5555-1212",
+            "email" : "email@rapidpizza.com",
+            "website" : "http://www.rapidpizza.com",
+            "logo" : "./images/directory_images/rapidpizza.png"    
+        },
+        {
+            "name" : "Rapid Burgers",
+            "type" : "Food",
+            "description" : "Business2",
+            "address" : "2711 N Lincoln St Kirksville, Missouri(MO), 63501",
+            "phone" : "(502) 5555-1212",
+            "email" : "email@rapidburgers.com",
+            "website" : "http://www.rapidburgers.com",
+            "logo" : "./images/directory_images/rapidburgers.png"
+        },
+        {
+            "name" : "Thankful Transport",
+            "type" : "Logistics",
+            "description" : "Business3",
+            "address" : "305 N Foster Dr Haughton, Louisiana(LA), 71037",
+            "phone" : "(502) 2658-4589",
+            "email" : "email@thankfultransport.com",
+            "website" : "http://www.thankfultransport.com",
+            "logo" : "./images/directory_images/thankfultransport.png"
+        },
+        {
+            "name" : "Code Primera",
+            "type" : "Education",
+            "description" : "Business4",
+            "address" : "13604 W 4250n Rd Essex, Illinois(IL), 60935",
+            "phone" : "(502) 4852-4875",
+            "email" : "email@codeprimera.com",
+            "website" : "http://www.codeprimera.com",
+            "logo" : "./images/directory_images/codeprimera.png"
+        },
+        {
+            "name" : "Build a Treefort",
+            "type" : "Construction",
+            "description" : "Business5",
+            "address" : "Rr 1 #BX 454 Wheatland, Missouri(MO), 65779",
+            "phone" : "(502) 6529-1254",
+            "email" : "email@buildatreefort.com",
+            "website" : "http://www.buildatreefort.com",
+            "logo" : "./images/directory_images/buildatreefort.png"
+        },
+        {
+            "name" : "Every Design",
+            "type" : "Decoration",
+            "description" : "Business6",
+            "address" : "139 Landisburg Rd Shermans Dale, Pennsylvania(PA), 17090",
+            "phone" : "(502) 5555-1212",
+            "email" : "email@everydesign.com",
+            "website" : "http://www.everydesign.com",
+            "logo" : "./images/directory_images/everydesign.png"
+        },
+        {
+            "name" : "HotDogs Master",
+            "type" : "Food",
+            "description" : "Business6",
+            "address" : "203 Rexnog Rd Valley Dale, Illinois(IL), 62354",
+            "phone" : "(502) 1423-4569",
+            "email" : "email@hotdogmaster.com",
+            "website" : "http://www.hotdogmaster.com",
+            "logo" : "./images/directory_images/hotdog.png"
+        }
+    ]
+}
