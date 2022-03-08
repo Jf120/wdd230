@@ -36,12 +36,21 @@ sizeBgSmall.addEventListener("change", changeBgSmall);
 
 import * as weather from './windchill.js';
 
-let temperature = 43;
-document.querySelector("#temperature").textContent = `${temperature} °C`;
-let wind_speed = 4;
-document.querySelector("#windspeed").innerHTML  = `${wind_speed} km/h`;
+const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=3598132&appid=6d8bed17e78d94b0f60b75c0e90d68fa';
 
-weather.windchill(temperature, wind_speed);
+fetch(apiURL)
+    .then(response => response.json())
+    .then((jsObject) => {
+        let wind_speed = jsObject.wind.speed;
+        let temperature = jsObject.main.temp - 273.15;
+        weather.windchill(temperature, wind_speed);
+        document.querySelector('#current-temp').innerHTML = `${(temperature).toFixed(2)} C`;
+        document.querySelector('#windspeed').innerHTML = `${(wind_speed).toFixed(2)} m/s`;
+        const iconsrc = `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
+        const desc = jsObject.weather[0].description;
+        document.querySelector('#weather-icon').setAttribute('src', iconsrc);
+        document.querySelector('#weather-icon').setAttribute('alt', desc);
+    });
 
 import * as main from './main.js';
 
