@@ -1,0 +1,74 @@
+{
+    "members" : [
+        {
+            "name" : "Rapid Pizza",
+            "type" : "Food",
+            "description" : "Business1",
+            "address" : "1401 Lee St Leakesville, Mississippi(MS), 39451",
+            "phone" : "(502) 5555-1212",
+            "email" : "email@rapidpizza.com",
+            "website" : "http://www.rapidpizza.com",
+            "logo" : "./images/directory_images/rapidpizza.png"    
+        },
+        {
+            "name" : "HotDogs Master",
+            "type" : "Food",
+            "description" : "Business6",
+            "address" : "203 Rexnog Rd Valley Dale, Illinois(IL), 62354",
+            "phone" : "(502) 1423-4569",
+            "email" : "email@hotdogmaster.com",
+            "website" : "http://www.hotdogmaster.com",
+            "logo" : "./images/directory_images/hotdog.png"
+        },
+        {
+            "name" : "Tacos Master",
+            "type" : "Food",
+            "description" : "Business6",
+            "address" : "203 Rexnog Rd Valley Dale, Arizona(AZ), 45213",
+            "phone" : "(502) 1423-4569",
+            "email" : "email@tacosmaster.com",
+            "website" : "http://www.tacosmaster.com",
+            "logo" : "./images/directory_images/taco.png"
+        },
+        {
+            "name" : "Italian Chef",
+            "type" : "Food",
+            "description" : "Business6",
+            "address" : "203 Rexnog Rd Valley Dale, Arizona(AZ), 45213",
+            "phone" : "(502) 1423-4569",
+            "email" : "email@italianchef.com",
+            "website" : "http://www.italianchef.com",
+            "logo" : "./images/directory_images/pasta.png"
+        },
+        {
+            "name" : "Bakery Master",
+            "type" : "Food",
+            "description" : "Business6",
+            "address" : "203 Rexnog Rd Valley Dale, Arizona(AZ), 45213",
+            "phone" : "(502) 1423-4569",
+            "email" : "email@bakerymaster.com",
+            "website" : "http://www.bakerymaster.com",
+            "logo" : "./images/directory_images/cake.png"
+        },
+        {
+            "name" : "Rapid Chicken",
+            "type" : "Food",
+            "description" : "Business6",
+            "address" : "203 Rexnog Rd Valley Dale, Arizona(AZ), 45213",
+            "phone" : "(502) 1423-4569",
+            "email" : "email@rapidchicken.com",
+            "website" : "http://www.rapidchicken.com",
+            "logo" : "./images/directory_images/chicken.png"
+        },
+        {
+            "name" : "China Food",
+            "type" : "Food",
+            "description" : "Business6",
+            "address" : "203 Rexnog Rd Valley Dale, Arizona(AZ), 45213",
+            "phone" : "(502) 1423-4569",
+            "email" : "email@chinafood.com",
+            "website" : "http://www.chinafood.com",
+            "logo" : "./images/directory_images/china.png"
+        }
+    ]
+}
