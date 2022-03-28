@@ -52,6 +52,78 @@ fetch(apiURL)
         document.querySelector('#weather-icon').setAttribute('alt', desc);
     });
 
+// Fetch data from the JSON file
+fetch('./js/data.json').then(function (response) {
+    return response.json();
+}).then(function (jsonObject) {
+    console.table(jsonObject);  // temporary checking for valid response and data parsing
+    const members = jsonObject['members'];
+    populate(members);
+});
+
+
+function populate (members) {
+
+    const numbersUsed = [];
+    for (let i = 0; i < members.length; i++) {
+        numbersUsed.push(i);
+    }
+
+    for (let i = 0; i < 3; i++) {
+        
+        let random = Math.floor(Math.random() * members.length);
+        console.log(random);
+
+        if (numbersUsed.includes(random)) {
+            numbersUsed.splice(random, 1);
+            console.log(numbersUsed);
+        } else {
+            random = Math.floor(Math.random() * members.length);
+
+            while (!numbersUsed.includes(random)) {
+                random = Math.floor(Math.random() * members.length);
+                console.log(random);
+            }
+            numbersUsed.splice(random, 1);
+            console.log(numbersUsed);
+        }
+
+        const member = members[random];
+        let className = '';
+        switch (i) {
+            case 0:
+                className = 'up';
+                break;
+            case 1:
+                className = 'middle';
+                break;
+            case 2:
+                className = 'down';
+                break;
+        }
+
+        let holder = document.querySelector(`.${className}`);
+        let h2 = document.createElement('h2');
+        let img = document.createElement('img');
+        let email = document.createElement('p');
+        let phone = document.createElement('p');
+
+        h2.textContent = member.name;
+        img.setAttribute('src', member.logo);
+        img.setAttribute('alt', member.name);
+        email.textContent = member.email;
+        phone.textContent = member.phone;
+
+        holder.appendChild(h2);
+        holder.appendChild(img);
+        holder.appendChild(email);
+        holder.appendChild(phone);
+
+    }
+
+};
+
+
 import * as main from './main.js';
 
 main.setDate();

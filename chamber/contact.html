@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directory</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/large.css">
     <link rel="stylesheet" href="css/medium.css">
@@ -47,12 +47,37 @@
             </div>
         </div>
     </header>
-    <main class="directory">
-        <div class="buttons">
-            <button id="card" type="button">Card</button>
-            <button id="list" type="button">List</button>
-        </div>
-        <section class="cards"></section>
+    <main id="contact">
+        <section class="contact-form">
+            <form class="contact">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </section>
+        <section class="visit-us">
+            <h2>Visit Us</h2>
+            <p>
+                Peach Town Chamber of Commerce is located at the heart of Peach Town. 
+            </p>
+
+            <h2>Business Hours</h3>
+            <p>
+                Monday - Friday: 9:00 a.m. - 5:00 p.m.
+            </p>
+            
+        </section> 
+
     </main>
     <footer>
         <section class="logo-info">
@@ -71,6 +96,6 @@
                 <span>Last Modification: <span id="lastModified"></span>
         </section>
     </footer>
-    <script type="module" src="./js/directory.js"></script>
+    <script type="module" src="./js/contact.js"></script>
 </body>
 </html>
